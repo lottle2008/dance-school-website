@@ -34,7 +34,7 @@ export default function BookingsAdminPage() {
   const courseMap: Record<string, string> = {
     "中国舞chinese-dance": "中国舞",
     "现代舞xiandai-dance": "现代舞",
-    "美育ballet: "舞蹈美育",
+    "美育ballet": "舞蹈美育",
     "启蒙early-dance": "舞蹈启蒙",
   };
 
