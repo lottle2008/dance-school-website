@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Clock, ArrowRight } from "lucide-react";
 import { CAMPUSES } from "@/lib/data";
 
@@ -17,8 +18,14 @@ export default function CampusSection() {
               key={campus.id}
               className="group overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:shadow-lg"
             >
-              <div className="aspect-video bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
-                <span className="text-6xl">🏫</span>
+              <div className="relative aspect-video bg-gradient-to-br from-pink-100 to-purple-100">
+                <Image
+                  src={`/images/campus-${campus.id}.jpg`}
+                  alt={`${campus.name}实景`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-slate-900">{campus.name}</h3>

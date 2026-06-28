@@ -1,8 +1,9 @@
 export const SCHOOL_INFO = {
   name: "蔷薇花开舞蹈学校",
   slogan: "始于舞，不止于舞。",
-  phone: "0335-8888-589",
-  wechat: "zx83116191",
+  phone: process.env.NEXT_PUBLIC_SCHOOL_PHONE || "0335-8888-589",
+  wechat: process.env.NEXT_PUBLIC_SCHOOL_WECHAT || "zx83116191",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "83116191@qq.com",
   description:
     "蔷薇花开舞蹈学校专注于 3-12 岁少儿舞蹈教育，开设中国舞、民族舞、现代舞等课程。我们拥有两个现代化校区，专业师资团队，致力于培养孩子的艺术素养与自信心。",
 };

@@ -18,9 +18,8 @@ export interface BookingRecord {
 // 正式上线后请替换为数据库（如 Vercel Postgres、MongoDB 等）。
 const bookings: BookingRecord[] = [];
 
-const WEBHOOK_URL =
-  "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=73cf4c9f-5c01-4ad6-b24a-4c6026d51fe0";
-const WEBHOOK_KEY = "73cf4c9f-5c01-4ad6-b24a-4c6026d51fe0";
+const WEBHOOK_URL = process.env.WEBHOOK_URL || "";
+const WEBHOOK_KEY = WEBHOOK_URL.split("key=").pop() || "";
 
 /** 上传二维码图片并发送到企业微信群 */
 async function sendWechatQrCode() {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SCHOOL_INFO } from "@/lib/data";
 import { Sparkles, ChevronRight } from "lucide-react";
 
@@ -53,15 +54,13 @@ export default function Hero() {
 
           <div className="relative">
             <div className="aspect-[4/3] overflow-hidden rounded-3xl bg-gradient-to-tr from-pink-200 to-purple-200 shadow-2xl">
-              <div className="flex h-full w-full items-center justify-center">
-                <div className="text-center">
-                  <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-white/80 text-5xl shadow-lg">
-                    💃
-                  </div>
-                  <p className="text-lg font-semibold text-pink-800">舞蹈课堂实景</p>
-                  <p className="text-sm text-pink-700">请替换为真实校区照片</p>
-                </div>
-              </div>
+              <Image
+                src="/images/hero-classroom.jpg"
+                alt="舞蹈课堂实景"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 rounded-2xl bg-white p-4 shadow-xl">
               <p className="text-sm font-semibold text-slate-900">本周试听名额</p>

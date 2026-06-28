@@ -82,10 +82,11 @@ pnpm build
 - [x] 企微二维码（预约成功页）
 - [x] 企业微信群机器人通知（预约提交后自动推送文本 + 二维码图片）
 - [x] 联系邮箱更新为 `83116191@qq.com`
+- [x] 敏感信息移入 `.env.local`（webhook key、学校联系方式）
 
 ## 待办事项
 
-- [ ] 替换 `components/ContactFloat.tsx` 中的企微渠道码链接为真实链接
+- [x] 替换 `components/ContactFloat.tsx` 中的企微渠道码链接为真实链接
 - [ ] 将预约数据从内存存储迁移到数据库（Vercel Postgres / MongoDB）
 - [ ] 部署后绑定自有域名
 - [ ] 注册微信公众号、小程序、微信开放平台，完成四端身份打通

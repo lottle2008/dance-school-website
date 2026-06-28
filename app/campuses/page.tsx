@@ -1,4 +1,5 @@
 import { CAMPUSES, SCHOOL_INFO } from "@/lib/data";
+import Image from "next/image";
 import { MapPin, Phone, Clock, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
@@ -25,11 +26,14 @@ export default function CampusesPage() {
                 id={campus.id}
                 className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm"
               >
-                <div className="aspect-video bg-gradient-to-br from-pink-100 to-purple-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-7xl">🏫</span>
-                    <p className="mt-2 text-sm text-pink-700">请替换为{campus.name}实景照片</p>
-                  </div>
+                <div className="relative aspect-video bg-gradient-to-br from-pink-100 to-purple-100">
+                  <Image
+                    src={`/images/campus-${campus.id}.jpg`}
+                    alt={`${campus.name}实景`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
                 <div className="p-8">
                   <h2 className="text-2xl font-bold text-slate-900">{campus.name}</h2>

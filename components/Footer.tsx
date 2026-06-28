@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-pink-500" />
-                83116191@qq.com
+                {SCHOOL_INFO.email}
               </li>
               <li className="flex items-start gap-2">
                 <Clock className="h-4 w-4 text-pink-500" />
