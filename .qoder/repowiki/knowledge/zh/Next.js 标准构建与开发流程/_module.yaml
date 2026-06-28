@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: build_system
+title: Next.js 标准构建与开发流程
+scope: []
+source_files:
+    - package.json
+    - pnpm-lock.yaml
+    - next.config.ts
+    - tsconfig.json
+    - eslint.config.mjs
+depends_on: []
+related_to: []

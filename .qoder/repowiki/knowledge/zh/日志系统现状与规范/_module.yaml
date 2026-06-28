@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: logging_system
+title: 日志系统现状与规范
+scope: []
+source_files:
+    - app/api/booking/route.ts
+depends_on: []
+related_to: []

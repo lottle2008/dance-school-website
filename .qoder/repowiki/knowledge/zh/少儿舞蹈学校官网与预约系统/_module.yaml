@@ -1,0 +1,46 @@
+schema_version: 1
+module_path: ""
+title: 少儿舞蹈学校官网与预约系统
+scope:
+    - .gitignore
+    - AGENTS.md
+    - CLAUDE.md
+    - README.md
+    - eslint.config.mjs
+    - next.config.ts
+    - package.json
+    - pnpm-lock.yaml
+    - postcss.config.mjs
+    - tsconfig.json
+    - app/
+    - components/
+    - lib/
+    - app\about\page.tsx
+    - app\admin\bookings\page.tsx
+    - app\api\booking\route.ts
+    - app\campuses\page.tsx
+    - app\courses\page.tsx
+    - app\favicon.ico
+    - app\globals.css
+    - app\layout.tsx
+    - app\page.tsx
+    - app\privacy\page.tsx
+    - components\BookingForm.tsx
+    - components\CampusSection.tsx
+    - components\ContactFloat.tsx
+    - components\CoursesSection.tsx
+    - components\Footer.tsx
+    - components\Hero.tsx
+    - components\Navbar.tsx
+    - components\ShowcaseSection.tsx
+    - components\TeachersSection.tsx
+    - lib\data.ts
+    - next-env.d.ts
+    - public\file.svg
+    - public\globe.svg
+    - public\next.svg
+    - public\vercel.svg
+    - public\window.svg
+source_files: []
+depends_on: []
+related_to: []

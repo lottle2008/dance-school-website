@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: configuration_system
+title: 配置系统现状：静态数据与默认框架配置
+scope: []
+source_files:
+    - lib/data.ts
+    - next.config.ts
+    - app/api/booking/route.ts
+    - package.json
+depends_on: []
+related_to: []
